@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+  <style>
+    .font-luxe-serif { font-family: 'Cormorant Garamond', serif; }
+    .font-luxe-sans { font-family: 'Inter', sans-serif; }
+    
+    /* Reveal effect for jewelry images */
+    .reveal-overlay {
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .group:hover .reveal-overlay {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-white text-stone-900 font-luxe-sans selection:bg-stone-200">
+
+  <nav class="fixed top-0 z-50 flex items-center justify-between w-full px-10 py-6 border-b bg-white/80 backdrop-blur-md border-stone-100">
+    <div class="text-[10px] uppercase tracking-[0.4em] font-medium hidden md:block">Collections</div>
+    <div class="text-2xl font-luxe-serif tracking-[0.2em] uppercase font-bold text-center">Aurelia</div>
+    <div class="flex gap-8 text-[10px] uppercase tracking-widest font-bold">
+      <span class="cursor-pointer">Search</span>
+      <span class="cursor-pointer">Cart (0)</span>
+    </div>
+  </nav>
+
+  <header class="px-6 pt-32 pb-20 text-center">
+    <div class="relative max-w-4xl mx-auto overflow-hidden rounded-sm cursor-pointer group">
+      <div class="overflow-hidden aspect-[16/9]">
+        <img src="https://brijdesignstudio.com/wp-content/uploads/2024/09/1-1.webp" 
+             class="w-full h-full object-cover transition-transform duration-[4000ms] group-hover:scale-105">
+      </div>
+      <div class="absolute inset-0 transition-opacity bg-black/10 group-hover:opacity-0"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-white">
+        <h1 class="mb-6 text-5xl italic md:text-7xl font-luxe-serif">The Solitaire Edit</h1>
+        <button class="border border-white px-10 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all duration-500">
+          Discover
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-stone-100">
+    
+    <div class="relative p-10 overflow-hidden border-b border-r cursor-pointer group border-stone-100">
+      <div class="mb-8 overflow-hidden aspect-square bg-stone-50">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070" 
+             class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110">
+      </div>
+      <div class="text-center">
+        <h3 class="mb-2 text-2xl italic font-luxe-serif">Ethereal Ring</h3>
+        <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-4">18k Gold • Diamond</p>
+        <span class="text-sm font-light">$2,400</span>
+      </div>
+      
+      <div class="absolute bottom-0 left-0 flex items-center justify-center w-full h-20 text-white translate-y-full opacity-0 bg-stone-900 reveal-overlay">
+        <span class="text-[10px] uppercase tracking-widest font-bold">Quick View</span>
+      </div>
+    </div>
+
+    <div class="relative p-10 overflow-hidden border-b border-r cursor-pointer group border-stone-100">
+      <div class="mb-8 overflow-hidden aspect-square bg-stone-50">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1974" 
+             class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110">
+      </div>
+      <div class="text-center">
+        <h3 class="mb-2 text-2xl italic font-luxe-serif">Pearl Droplets</h3>
+        <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-4">Freshwater Pearls</p>
+        <span class="text-sm font-light">$850</span>
+      </div>
+      <div class="absolute bottom-0 left-0 flex items-center justify-center w-full h-20 text-white translate-y-full opacity-0 bg-stone-900 reveal-overlay">
+        <span class="text-[10px] uppercase tracking-widest font-bold">Quick View</span>
+      </div>
+    </div>
+
+    <div class="relative p-10 overflow-hidden border-b border-r cursor-pointer group border-stone-100">
+        <div class="mb-8 overflow-hidden aspect-square bg-stone-50">
+          <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=1974" 
+               class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110">
+        </div>
+        <div class="text-center">
+          <h3 class="mb-2 text-2xl italic font-luxe-serif">Snake Chain</h3>
+          <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-4">Sterling Silver</p>
+          <span class="text-sm font-light">$420</span>
+        </div>
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-full h-20 text-white translate-y-full opacity-0 bg-stone-900 reveal-overlay">
+          <span class="text-[10px] uppercase tracking-widest font-bold">Quick View</span>
+        </div>
+      </div>
+
+    <div class="relative p-10 overflow-hidden border-b border-r cursor-pointer group border-stone-100">
+        <div class="mb-8 overflow-hidden aspect-square bg-stone-50">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1974" 
+               class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110">
+        </div>
+        <div class="text-center">
+          <h3 class="mb-2 text-2xl italic font-luxe-serif">Onyx Studs</h3>
+          <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-4">Black Onyx • Gold</p>
+          <span class="text-sm font-light">$310</span>
+        </div>
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-full h-20 text-white translate-y-full opacity-0 bg-stone-900 reveal-overlay">
+          <span class="text-[10px] uppercase tracking-widest font-bold">Quick View</span>
+        </div>
+      </div>
+
+  </section>
+
+  <footer class="px-10 py-24 bg-white">
+    <div class="grid items-start gap-20 mx-auto md:grid-cols-3 max-w-7xl">
+      <div>
+        <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-8">Visit Us</h4>
+        <p class="text-sm font-light leading-relaxed text-stone-500">
+          The Jewelry Quarter<br>
+          Bengaluru, KA 560001
+        </p>
+      </div>
+      <div class="text-center">
+        <div class="text-2xl font-luxe-serif tracking-[0.2em] uppercase font-bold mb-4">Aurelia</div>
+        <p class="text-[9px] uppercase tracking-widest text-stone-400">Excellence in Craft since 2026</p>
+      </div>
+      <div class="text-right">
+        <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-8">Stay Connected</h4>
+        <div class="flex flex-col gap-4 text-sm font-light">
+          <a href="#" class="transition hover:text-stone-400">Instagram</a>
+          <a href="#" class="transition hover:text-stone-400">Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
